@@ -81,7 +81,6 @@ export default {
       const draggedItem = this.products[this.draggedItemIndex];
       this.products.splice(this.draggedItemIndex, 1);//remove the item from his place
       this.products.splice(index, 0, draggedItem);//insert the item in place of the index
-
       this.draggedItemIndex = null;
     },
   },
