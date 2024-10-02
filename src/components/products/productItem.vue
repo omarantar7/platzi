@@ -2,7 +2,6 @@
   <section>
     <img :src="image" alt="product image" />
     <div>
-
       <h1>{{ title }}</h1>
       <p>{{ price }} $</p>
     </div>
@@ -35,7 +34,7 @@ h2 {
   margin: 0;
 }
 img {
-  border-radius: 50%;
+  border-radius: 2rem;
   width: 16rem;
   height: 16rem;
   object-fit: contain;
@@ -45,10 +44,22 @@ p {
   font-weight: bold;
   color: rgb(23, 228, 16);
 }
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   img {
-    width: 16rem;
-    height: 16rem;
+    width: 10rem;
+    height: 10rem;
+  }
+  section{
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 0;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.25rem;
   }
 }
 </style>

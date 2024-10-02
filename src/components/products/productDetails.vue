@@ -131,4 +131,29 @@ section {
     width: 40rem;
   }
 }
+@media (max-width:650px) {
+  dialog{
+    width:33rem;
+    height: fit-content;
+    left: 10%;
+  }
+}
+@media (max-width:450px) {
+  dialog{
+    width:22rem;
+    height: fit-content;
+    left: 3%;
+  }  
+  .info{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  img{
+    width: 10rem;
+    height: 10rem;
+  }
+}
 </style>

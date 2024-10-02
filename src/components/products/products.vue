@@ -15,11 +15,8 @@
         :key="prd.id"
         :id="prd.id"
         :title="prd.title"
-        :description="prd.description"
         :image="prd.image"
         :price="prd.price"
-        :category="prd.category"
-        :ratings="prd.ratings"
         @click="loadProductDetails(prd.id)"
         draggable="true"
         @dragstart="dragStart(index)"
@@ -100,4 +97,5 @@ h2 {
   width: fit-content;
   margin: 2rem auto;
 }
+
 </style>
